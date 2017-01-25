@@ -5,19 +5,10 @@
   "cordova": {
     "id": "joaogl-plugin-copy",
     "platforms": [
-      "firefoxos",
-      "tizen",
-      "android",
-      "amazon-fireos",
-      "ubuntu",
-      "ios",
-      "blackberry10",
       "wp7",
       "wp8",
       "windows8",
-      "windows",
-      "browser",
-      "osx"
+      "windows"
     ]
   },
   "repository": {

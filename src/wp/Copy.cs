@@ -23,8 +23,7 @@ namespace WPCordovaClassLib.Cordova.Commands
     {
         public void getDeviceInfo(string notused)
         {
-            string res = String.Format("\"name\":\"{0}\",\"platform\":\"{1}\",\"uuid\":\"{2}\",\"version\":\"{3}\",\"model\":\"{4}\",\"manufacturer\":\"{5}\",\"isVirtual\":{6}",
-                                        "Oiiiii",
+            string res = String.Format("\"name\":\"Oiiiii\",\"platform\":\"{1}\",\"uuid\":\"{2}\",\"version\":\"{3}\",\"model\":\"{4}\",\"manufacturer\":\"{5}\",\"isVirtual\":{6}",
                                         Environment.OSVersion.Platform.ToString(),
                                         UUID,
                                         Environment.OSVersion.Version.ToString(),
