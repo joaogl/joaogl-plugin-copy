@@ -46,4 +46,50 @@
         <source-file src="src/ios/sqlDB.h" />
         <source-file src="src/ios/sqlDB.m" />
     </platform>
+
+    <!-- wp7 -->
+    <platform name="wp7">
+        <config-file target="config.xml" parent="/*">
+            <feature name="sqlDB">
+                <param name="wp-package" value="sqlDB"/>
+            </feature>
+        </config-file>
+
+        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+        </config-file>
+
+        <source-file src="src/wp/sqlDB.cs" />
+    </platform>
+
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="sqlDB">
+                <param name="wp-package" value="sqlDB"/>
+            </feature>
+        </config-file>
+
+        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+        </config-file>
+
+        <source-file src="src/wp/sqlDB.cs" />
+    </platform>
+
+    <!-- windows -->
+    <platform name="windows">
+        <config-file target="config.xml" parent="/*">
+            <feature name="sqlDB">
+                <param name="wp-package" value="sqlDB"/>
+            </feature>
+        </config-file>
+
+        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+        </config-file>
+
+        <source-file src="src/wp/sqlDB.cs" />
+    </platform>
+	
 </plugin>

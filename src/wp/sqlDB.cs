@@ -19,7 +19,7 @@ using System.IO.IsolatedStorage;
 
 namespace WPCordovaClassLib.Cordova.Commands
 {
-    public class Copy : BaseCommand
+    public class sqlDB : BaseCommand
     {
         public void getDeviceInfo(string notused)
         {
