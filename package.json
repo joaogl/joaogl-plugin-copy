@@ -1,38 +1,38 @@
 {
   "name": "joaogl-plugin-copy",
-  "version": "1.0.0",
-  "description": "Cordova Device Plugin",
+  "version": "1.1.0",
+  "description": "Cordova/Phonegap plugin to copy SQLite Database from www directory to app database directory",
   "cordova": {
     "id": "joaogl-plugin-copy",
     "platforms": [
-      "wp7",
-      "wp8",
-      "windows8",
-      "windows"
+      "android",
+      "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joaogl/joaogl-plugin-copy"
+    "url": "https://github.com/joaogl/joaogl-plugin-copy.git"
   },
   "keywords": [
-    "cordova",
-    "device",
+    "sqlite db copy",
     "ecosystem:cordova",
-    "cordova-firefoxos",
-    "cordova-tizen",
     "cordova-android",
-    "cordova-amazon-fireos",
-    "cordova-ubuntu",
     "cordova-ios",
-    "cordova-blackberry10",
-    "cordova-wp7",
-    "cordova-wp8",
-    "cordova-windows8",
-    "cordova-windows",
-    "cordova-browser",
-    "cordova-osx"
+    "db copy",
+    "cordova sqlite",
+    "database copy",
+    "sqlite database copy"
   ],
-  "author": "Joaogl",
-  "license": "Apache-2.0"
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Rahul Pandey",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/an-rahulpandey/cordova-plugin-dbcopy/issues"
+  },
+  "homepage": "https://github.com/an-rahulpandey/cordova-plugin-dbcopy"
 }
