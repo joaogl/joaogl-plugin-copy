@@ -9,7 +9,7 @@
 
     <!-- windows -->
     <platform name="windows">
-        <js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
+        <js-module src="src/wp/echopluginProxy.js" name="EchoProxy">
             <merges target="" />
         </js-module>
     </platform>
