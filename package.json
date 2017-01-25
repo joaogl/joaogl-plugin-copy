@@ -6,10 +6,7 @@
     "id": "joaogl-plugin-copy",
     "platforms": [
       "android",
-      "ios",
-      "wp7",
-      "wp8",
-      "windows"
+      "ios"
     ]
   },
   "repository": {

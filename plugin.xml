@@ -1,95 +1,18 @@
-<?xml version='1.0' encoding='utf-8'?>
-<plugin id="joaogl-plugin-copy"
-        version="1.0.0"
-        xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="echoplugin"
+    version="0.1.0">
 
-    <name>sqlDB</name>
-
-    <description>Copy SQLite Database to Document Directory</description>
-
-     <license>Apache 2.0</license>
-
-     <author>Rahul Pandey</author>
-
-     <engines>
-        <engine name="cordova" version=">=3.0.0" />
-     </engines>
-
-    <js-module name="sqlDB" src="www/sqlDB.js">
-        <clobbers target="window.plugins.sqlDB" />
+    <js-module src="www/echoplugin.js" name="echoplugin">
+        <clobbers target="window.echoplugin" />
     </js-module>
-
-    <platform name="android">
-        <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="sqlDB">
-                <param name="android-package" value="me.rahul.plugins.sqlDB.sqlDB" />
-            </feature>
-        </config-file>
-
-        <config-file parent="/manifest" target="AndroidManifest.xml">
-            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-        </config-file>
-
-        <source-file src="src/android/sqlDB.java" target-dir="src/me/rahul/plugins/sqlDB/" />
-        <source-file src="src/android/DatabaseHelper.java" target-dir="src/me/rahul/plugins/sqlDB/" />
-
-    </platform>
-
-    <platform name="ios">
-        <config-file parent="/*" target="config.xml">
-            <feature name="sqlDB">
-                <param name="ios-package" value="sqlDB" />
-            </feature>
-        </config-file>
-
-        <source-file src="src/ios/sqlDB.h" />
-        <source-file src="src/ios/sqlDB.m" />
-    </platform>
-
-    <!-- wp7 -->
-    <platform name="wp7">
-        <config-file target="config.xml" parent="/*">
-            <feature name="sqlDB">
-                <param name="wp-package" value="sqlDB"/>
-            </feature>
-        </config-file>
-
-        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
-        </config-file>
-
-        <source-file src="src/wp/sqlDB.cs" />
-    </platform>
-
-    <!-- wp8 -->
-    <platform name="wp8">
-        <config-file target="config.xml" parent="/*">
-            <feature name="sqlDB">
-                <param name="wp-package" value="sqlDB"/>
-            </feature>
-        </config-file>
-
-        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
-        </config-file>
-
-        <source-file src="src/wp/sqlDB.cs" />
-    </platform>
 
     <!-- windows -->
     <platform name="windows">
-        <config-file target="config.xml" parent="/*">
-            <feature name="sqlDB">
-                <param name="wp-package" value="sqlDB"/>
-            </feature>
-        </config-file>
-
-        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
-        </config-file>
-
-        <source-file src="src/wp/sqlDB.cs" />
+        <js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
+            <merges target="" />
+        </js-module>
     </platform>
-	
+    <!-- other platforms -->
+
 </plugin>
